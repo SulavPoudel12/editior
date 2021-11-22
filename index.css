@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body{
+    overflow: hidden;
+}
+#textarea{
+display: grid;
+grid-gap: 0.1rem;
+
+grid-template-areas: 
+'  html css ' 
+'  html js'
+/* 'css css css js '; */
+;
+height: 98vh;
+border: 1vh solid black;
+}
+.item{
+background-color: rgb(0, 0, 0);
+border: 3px solid black;
+padding: 12px 23px;
+font-size: 18px;
+}
+#html{
+grid-area: html;
+color: orange;
+}
+#css{
+grid-area: css;
+color: rgb(255, 255, 86);
+}
+#js{
+grid-area: js;
+color: rgb(0, 217, 255);
+}
+#iframe{
+height:100vh;
+/* background-color: aquamarine; */
+width: 100vw;
+display: none;
+}
+#toogle{
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 100%;
+bottom:0;
+left: 50%;
+transform: translate(-50% ,0%);
+border: 2px solid rgb(87, 87, 87);
+background-color: rgb(0, 0, 0);
+}
